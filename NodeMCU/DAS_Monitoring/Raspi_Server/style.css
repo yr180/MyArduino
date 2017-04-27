@@ -1,0 +1,41 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.about{
+    display: -webkit-flex;
+    display: flex;
+}
+
+.title{
+    text-align: left;
+    color: white;
+    background-color: #33bebe;
+    padding-top: 1px;
+    font-family: Helvetica;
+    margin-left: 25px;
+}
+
+.screenshot{
+    max-width: 400;
+    max-height: 250
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.description{
+    color: #7C8B88;
+    font-family: Helvetica;
+    font-size: 25;
+    max-width: 705;
+    margin-left: 50px;
+}
+
+.data{
+    font-size: 30;
+    margin-right: 25px;
+    margin-left: 25px;
+}
