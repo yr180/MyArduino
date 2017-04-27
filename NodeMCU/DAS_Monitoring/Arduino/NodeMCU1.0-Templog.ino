@@ -5,8 +5,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "Relax Broadband 702";
-const char* password = "old@25718250";
+const char* ssid     = "";
+const char* password = "";
 
 const char* host = "192.168.0.103";
 float t;
