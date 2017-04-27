@@ -15,7 +15,8 @@ String data = "";
 float readTemp()
 {
   float temp = analogRead(A0);
-  temp = (3.3*temp/1024)/10;
+  temp = (3300*temp/1024);  //Temperature in mV
+  temp = temp/10;           //10mV per degree scaling
   return(temp);
 }
 
