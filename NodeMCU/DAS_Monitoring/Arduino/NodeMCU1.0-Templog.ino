@@ -1,5 +1,5 @@
 /*
- *  This sketch receives data via HTTP POST requests from apache2 on rpi.
+ *  This sketch sends data via HTTP GET requests to Raspberry Pi web server.
  *
  */
 
@@ -14,7 +14,9 @@ String data = "";
 
 float readTemp()
 {
-  return(3.3*analogRead(A0)/1024);
+  float temp = analogRead(A0);
+  temp = (3.3*temp/1024)/10;
+  return(temp);
 }
 
 void setup() {
