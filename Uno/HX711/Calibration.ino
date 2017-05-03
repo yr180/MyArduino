@@ -1,5 +1,5 @@
 /*
- This sketch is used to determine the calibration_factor that the main example uses. It also
+ This sketch is used to determine the calibration_factor that the DemoWeight example uses. It also
  outputs the zero_factor useful for projects that have a permanent mass on the scale in between power cycles.
 
  Setup your scale and start the sketch WITHOUT a weight on the scale
