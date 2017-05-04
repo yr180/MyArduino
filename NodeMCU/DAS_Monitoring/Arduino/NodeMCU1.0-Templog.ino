@@ -8,14 +8,14 @@
 const char* ssid     = "";
 const char* password = "";
 
-const char* host = "192.168.0.103";
+const char* host = "hostIP";
 float t;
 String data = "";
 
 float readTemp()
 {
   float temp = analogRead(A0);
-  temp = (3300*temp/1024);  //Temperature in mV
+  temp = (3300*temp/1023);  //Temperature in mV
   temp = temp/10;           //10mV per degree scaling
   return(temp);
 }
@@ -51,7 +51,7 @@ void loop() {
   t = readTemp();
    
   Serial.println(data);
-  data = "GET /addData.php?" + "temp1=" + String(t,2) + " HTTP/1.1\r\nHost: 192.168.0.103\r\nConnection: close\r\n\r\n";  
+  data = "GET /addData.php?" + "temp1=" + String(t,2) + " HTTP/1.1\r\nHost: " + host + "\r\nConnection: close\r\n\r\n";  
   // Use WiFiClient class to create TCP connections
   WiFiClient client;
   if (client.connect(host,80)) 
