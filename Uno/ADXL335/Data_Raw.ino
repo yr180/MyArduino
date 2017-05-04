@@ -23,9 +23,9 @@ void loop()
   float zRead = analogRead(A3);
   
   //Converting to mV
-  float Vx = ADC_REF*xRead/1024;
-  float Vy = ADC_REF*yRead/1024;
-  float Vz = ADC_REF*zRead/1024;
+  float Vx = ADC_REF*xRead/1023;
+  float Vy = ADC_REF*yRead/1023;
+  float Vz = ADC_REF*zRead/1023;
   
   Serial.print("\nValues in mV of x y z\n"); 
   Serial.print(Vx);
@@ -43,5 +43,5 @@ void loop()
   Serial.print((Vz-zMean)/zSen);
   Serial.print("\n");
   
-  delay(2000);
+  delay(1000);
 }
