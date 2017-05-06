@@ -1,0 +1,207 @@
+Sample output:
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Pune, India",
+		"city":"Pune",
+		"state":"MH",
+		"state_name":"India",
+		"country":"IN",
+		"country_iso3166":"IN",
+		"zip":"00000",
+		"magic":"59",
+		"wmo":"43063",
+		"latitude":"18.54000092",
+		"longitude":"73.84999847",
+		"elevation":"573.0"
+		},
+		"observation_location": {
+		"full":"PIMPLESAUDAGAR, Pimpri-Chinchwad, MAHARASHTRA",
+		"city":"PIMPLESAUDAGAR, Pimpri-Chinchwad",
+		"state":"MAHARASHTRA",
+		"country":"IN",
+		"country_iso3166":"IN",
+		"latitude":"18.597208",
+		"longitude":"73.788582",
+		"elevation":"1857 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"IMAHARAS26",
+		"observation_time":"Last Updated on May 6, 8:06 PM IST",
+		"observation_time_rfc822":"Sat, 06 May 2017 20:06:31 +0530",
+		"observation_epoch":"1494081391",
+		"local_time_rfc822":"Sat, 06 May 2017 20:06:44 +0530",
+		"local_epoch":"1494081404",
+		"local_tz_short":"IST",
+		"local_tz_long":"Asia/Kolkata",
+		"local_tz_offset":"+0530",
+		"weather":"Partly Cloudy",
+		"temperature_string":"90.1 F (32.3 C)",
+		"temp_f":90.1,
+		"temp_c":32.3,
+		"relative_humidity":"50%",
+		"wind_string":"From the NE at 2.5 MPH Gusting to 7.4 MPH",
+		"wind_dir":"NE",
+		"wind_degrees":46,
+		"wind_mph":2.5,
+		"wind_gust_mph":"7.4",
+		"wind_kph":4.0,
+		"wind_gust_kph":"11.9",
+		"pressure_mb":"1005",
+		"pressure_in":"29.68",
+		"pressure_trend":"",
+		"dewpoint_string":"69 F (20 C)",
+		"dewpoint_f":69,
+		"dewpoint_c":20,
+		"heat_index_string":"95 F (35 C)",
+		"heat_index_f":95,
+		"heat_index_c":35,
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"95 F (35 C)",
+		"feelslike_f":"95",
+		"feelslike_c":"35",
+		"visibility_mi":"6.0",
+		"visibility_km":"10.0",
+		"solarradiation":"0",
+		"UV":"0.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/43063.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IMAHARAS26",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=18.597208,73.788582",
+		"nowcast":""
+	}
+}
+
+
+*************************************************ESP Output*******************************************************
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=UTF-8
+Last-Modified: Sat, 06 May 2017 14:49:37 GMT
+Server: Apache/2.2.15 (CentOS)
+X-CreationTime: 0.036
+Expires: Sat, 06 May 2017 14:50:24 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Date: Sat, 06 May 2017 14:50:24 GMT
+Content-Length: 2597
+Connection: close
+
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Pune, India",
+		"city":"Pune",
+		"state":"MH",
+		"state_name":"India",
+		"country":"IN",
+		"country_iso3166":"IN",
+		"zip":"00000",
+		"magic":"59",
+		"wmo":"43063",
+		"latitude":"18.54000092",
+		"longitude":"73.84999847",
+		"elevation":"573.0"
+		},
+		"observation_location": {
+		"full":"PIMPLESAUDAGAR, Pimpri-Chinchwad, MAHARASHTRA",
+		"city":"PIMPLESAUDAGAR, Pimpri-Chinchwad",
+		"state":"MAHARASHTRA",
+		"country":"IN",
+		"country_iso3166":"IN",
+		"latitude":"18.597208",
+		"longitude":"73.788582",
+		"elevation":"1857 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"IMAHARAS26",
+		"observation_time":"Last Updated on May 6, 8:19 PM IST",
+		"observation_time_rfc822":"Sat, 06 May 2017 20:19:27 +0530",
+		"observation_epoch":"1494082167",
+		"local_time_rfc822":"Sat, 06 May 2017 20:19:37 +0530",
+		"local_epoch":"1494082177",
+		"local_tz_short":"IST",
+		"local_tz_long":"Asia/Kolkata",
+		"local_tz_offset":"+0530",
+		"weather":"Partly Cloudy",
+		"temperature_string":"89.6 F (32.0 C)",
+		"temp_f":89.6,
+		"temp_c":32.0,
+		"relative_humidity":"50%",
+		"wind_string":"Calm",
+		"wind_dir":"South",
+		"wind_degrees":191,
+		"wind_mph":0.0,
+		"wind_gust_mph":0,
+		"wind_kph":0,
+		"wind_gust_kph":0,
+		"pressure_mb":"1005",
+		"pressure_in":"29.68",
+		"pressure_trend":"",
+		"dewpoint_string":"68 F (20 C)",
+		"dewpoint_f":68,
+		"dewpoint_c":20,
+		"heat_index_string":"94 F (34 C)",
+		"heat_index_f":94,
+		"heat_index_c":34,
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"94 F (34 C)",
+		"feelslike_f":"94",
+		"feelslike_c":"34",
+		"visibility_mi":"6.0",
+		"visibility_km":"10.0",
+		"solarradiation":"0",
+		"UV":"0.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/43063.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IMAHARAS26",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=18.597208,73.788582",
+		"nowcast":""
+	}
+}
